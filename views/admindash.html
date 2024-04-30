@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+    <section id="header-Sec" class="section">
+    <header class="header" >
+
+        <a href="#" class="logo"> <img  src="./data/images/DAYSTARLOGO.png" alt="Card image"></a>
+
+        <nav class="navbar" id="nav-bar">
+            <a href="#home">School Activities</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="logout-btn"><a href="/index.html">Logout</a></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        
+
+    </header>
+</section>
+
+   
+
+    <section class="dashboard" id="home">
+
+        
+            <h2>Add New User</h2>
+    <form id="addUserForm" class="adduserForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><br>
+        
+        <label for="childName">ChildName:</label>
+        <input type="text" id="childName" name="childName" required><br><br>
+
+        <label for="childAge">ChildAge:</label>
+        <input type="text" id="childAge" name="childAge" ><br><br>
+
+        <label for="childGender">ChildGender:</label>
+        <select id="childGender" name="childGender" class="form-control" placeholder="choose">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+      </select><br>
+
+      <label for="id">Id:</label><br>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="telNo">TelNo:</label><br>
+        <input type="text" id="telNo" name="telNo" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="on" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" autocomplete="on" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" autocomplete="on" required><br><br>
+        
+        <label for="role">Role:</label><br>
+        <select type="text" id="role" name="role" class="form-control" placeholder="role">
+          <option value="admin">Admin</option>
+          <option value="sitter">Sitter</option>
+          <option value="parent">Parent</option>
+      </select><br>
+
+        <label for="userName">UserName:</label><br>
+        <input type="userName" id="userName" name="userName" autocomplete="on" required><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Add User</button>
+    </form>
+
+
+</section>
+
+<div class="container" id="formContainer">
+    <h2>User List</h2>
+    <table id="userTable" class="userTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Child Name</th>
+                <th>Child Age</th>
+                <th>Child Gender</th>
+                <th>Id</th>
+                <th>Tel No</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Country</th>
+                <th>Role</th>
+                <th>User Name</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User data will be dynamically inserted here -->
+        </tbody>
+    </table>
+</div>
+</div>
+  <script src="/public/js/admindash.js"></script> 
+
+</body>
+</html>

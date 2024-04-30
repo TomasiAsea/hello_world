@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/adduser.css">
+</head>
+<body>
+    <form action="/adduser" method="POST">
+        <fieldset>
+            <legend>
+                User personal information
+            </legend>
+            <label> first name</label>
+                <input type="text" id="firstName" name="firstName" />
+            <label>last name</label>
+                <input type="text" id="lastName" name="lastName" />
+            <label for="childName">ChildName:</label>
+                <input type="text" id="childName" name="childName" class="form-control" placeholder="childName" required>
+            <label for="childAge">ChildAge:</label>
+                <input type=int id="childAge" name="childAge" class="form-control" placeholder="childAge" required>
+            <label>Enter your gender</label>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                />Male
+                <input
+                    id="gender"
+                    type="radio"
+                    name="gender"
+                    value="female"
+                />Female
+                <input
+                id="gender"
+                    type="radio"
+                    name="gender"
+                    value="others"
+                />Others
+            
+            <label>ID:</label>
+                <input type="text" id="id" name="id" class="form-control" placeholder="id" required>
+            
+            <label for="telNo">TelNo:</label>
+                <input type= int id="telNo" name="telNo" class="form-control" placeholder="telNo" required>
+            
+            <label>Enter your Address:</label>
+                <textarea
+                    id="address"
+                    name="address"
+                ></textarea>
+
+            <label>Enter your email</label>
+                <input
+                id="email"
+                    type="email"
+                    name="email"
+                />
+
+            <label for="country">Country:</label>
+                <input type="text" id="country" name="country" class="form-control" placeholder="country" required>
+
+            <label for="role">Role:</label>
+                <select id="role" name="role" class="form-control" placeholder="role">
+                    <option value="admin">Admin</option>
+                    <option value="sitter">Sitter</option>
+                    <option value="parent">Parent</option>
+                </select>
+                
+            <label>Enter your Date of Birth</label>
+                <input id="dob" type="date" name="dob" />
+            
+            <label for="userName">UserName:</label>
+                <input id="userName" type="text" id="userName" name="userName" class="form-control" placeholder="userName" required>
+
+            <label>Enter your password</label>
+            <input
+                id="password"
+                type="password"
+                name="pass"
+            />
+            <label
+                >Confirm your password</label
+            >
+            <input
+                id="password"
+                type="password"
+                name="confirmPass"
+            />
+            
+            
+          <!--  <input type="submit"   value="submit"/> -->
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</body>
+</html>
